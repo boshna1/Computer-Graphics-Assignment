@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     [SerializeField] Text timer;
     [SerializeField] GameObject canvas;
     [SerializeField] Text endText;
+    [SerializeField] Dirt dirt;
     float time = 0f;
     void Update()
     {
@@ -16,7 +17,7 @@ public class Timer : MonoBehaviour
         if (time >= 300)
         {
             canvas.SetActive(true);
-            endText.text = "Congratulations!\nYou completed the night shift ";
+            endText.text = "Congratulations!\nYou completed the night shift\nJobs Completed: " + dirt.GetJobsCompleted();
         }
     }
 }

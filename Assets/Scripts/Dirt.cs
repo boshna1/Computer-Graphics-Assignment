@@ -8,6 +8,7 @@ public class Dirt : MonoBehaviour
     bool isLooked = false;
     float timeCleaned = 0;
     bool finishClean;
+    int Complete = 0;
     [SerializeField] Slider slider;
     [SerializeField] Text timed;
     [SerializeField] GameObject text;
@@ -86,6 +87,12 @@ public class Dirt : MonoBehaviour
             GameObject.FindGameObjectWithTag("JobHolder").GetComponent<JobSpawner>().DecreaseJob();
             finishClean = false;
             text.SetActive(false);
+            Complete++;
         }
+    }
+
+    public int GetJobsCompleted()
+    {
+        return Complete;
     }
 }

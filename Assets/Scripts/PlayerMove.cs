@@ -33,12 +33,4 @@ public class PlayerMove : MonoBehaviour
     }
 
 
-    IEnumerator WalkSoundCooldown()
-    {
-        playStep = false;
-        yield return new WaitForSeconds(0.5f);
-        playStep = true;
-        
-    }
-
 }
