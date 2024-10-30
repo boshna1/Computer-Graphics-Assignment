@@ -25,7 +25,7 @@ float4 _myColor;
 
     void surf(Input IN, inout SurfaceOutput o)
     {
-            o.Albedo = tex2D(_myDiffuse, IN.uv_myDiffuse).rgb * _myColor;
+        o.Albedo = tex2D(_myDiffuse, IN.uv_myDiffuse).rgb * _myColor;
         o.Normal = UnpackNormal(tex2D(_myBump, IN.uv_myBump));
         o.Normal *= float3(_mySlider,_mySlider,1);
     }

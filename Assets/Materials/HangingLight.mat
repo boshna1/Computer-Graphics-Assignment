@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: HangingLight
-  m_Shader: {fileID: 4800000, guid: 5716823199082bc42a3686309c8bccd2, type: 3}
+  m_Shader: {fileID: 4800000, guid: 160d185fd1531804e832f8fd8e52a74b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -89,6 +89,7 @@ Material:
     - _mySlider: 1
     m_Colors:
     - _Color: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
+    - _ColorTint: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _myColor: {r: 1, g: 1, b: 1, a: 1}
