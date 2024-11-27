@@ -12,6 +12,7 @@ TagManager:
   - Dirt
   - JobHolder
   - Interact
+  - Kitchen
   layers:
   - Default
   - TransparentFX
